@@ -4,11 +4,11 @@ import styled from "styled-components"
 
 import BackgroundImage from "gatsby-background-image"
 
-export default function Hero() {
+export default function Hero({ className }) {
   const data = useStaticQuery(
     graphql`
       query {
-        desktop: file(relativePath: { eq: "seamless-bg-desktop.jpg" }) {
+        desktop: file(relativePath: { eq: "elephant.jpg" }) {
           childImageSharp {
             fluid(quality: 90, maxWidth: 1920) {
               ...GatsbyImageSharpFluid_withWebp
