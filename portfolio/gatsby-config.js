@@ -9,6 +9,17 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-mdx`,
+    {
+      resolve: `gatsby-plugin-mdx`,
+
+      options: {
+        defaultLayouts: {
+          default: require.resolve("./src/templates/posts-layout.js"),
+        },
+        gatsbyRemarkPlugins: ["gatsby-remark-images"],
+        plugins: ["gatsby-remark-images"],
+      },
+    },
 
     {
       resolve: `gatsby-source-filesystem`,
