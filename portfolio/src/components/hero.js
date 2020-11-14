@@ -14,6 +14,7 @@ const StyledBackgroundImage = styled(BackgroundImage)`
   width: 100%;
   background-size: cover;
   opacity: 1 !important;
+  color: white;
 `
 
 const Flex = styled.div`
